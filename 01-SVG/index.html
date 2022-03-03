@@ -15,23 +15,57 @@
     <h1>Dessiner des formes</h1>
     <h2>Rectangle</h2>
 
-    <h2>Donut</h2>
+    <svg width="400" height="100">
+      <rect x="0" y="0" width="400" height="100" fill="red"> </rect>
+    </svg>
 
+    <h2>Donut</h2>
+    <svg width="300" height="150">
+      <circle cx="50" cy="50" r="60" style="fill:none;stroke-width:1;stroke:rgb(0,0,0)"></circle>
+      <circle cx="50" cy="50" r="30" style="fill:none;stroke-width:1;stroke:rgb(0,0,0)"></circle>
+    </svg>
 
     <h2>Ligne</h2>
-
+    <svg width="1000" height="100">
+      <line x1="20" y1="50" x2="8.233031891709" y2="-8.8348405414552" stroke="red"></line>
+    </svg>
 
     <h2>Path</h2>
+    <svg width="1000" height="200">
+      <g stroke="black" stroke-width="2" fill="none">
+      <path d="M 50 20 H 20  M 20 20 V 50 H 50 V 90 H 20" ></path>
+      <path d="M 120 20 H 70 M 95 20 V 90 " ></path>
+      <path d="M 130 20 V 90 H 170 M 130 20 H 170 M 130 60 H 170 " ></path>
+    </g>
+    </svg>
 
+  
 
     <h1>Animer des formes</h1>
 
     <h2>On click</h2>
+    <svg>
+      <rect id="rect1" style="fill: red" width=400 height=100></rect>
+    </svg>
 
     <h2>On hover</h2>
+    <svg width="300" height="150">
+      <circle id="hoverCircle" cx="50" cy="50" r="60" style="fill:none;stroke-width:4;stroke:rgb(0,0,0)"></circle>
+      <circle cx="50" cy="50" r="30" style="fill:none;stroke-width:4;stroke:rgb(0,0,0)"></circle>
+    </svg>
 
     <h2>Prenez la première lettre de votre prénom que vous avez créée ci-dessus. Faite bouger une forme de votre choix le long de la lettre</h2>
-
+    <svg width="1000" height="200">
+      <g stroke="black" stroke-width="2" fill="none">
+      <path id="animationLettre" d="M 50 20 H 20  M 20 20 V 50 H 50 V 90 H 20" ></path>
+      <circle cx="" cy="" r="4" fill="blue">
+        <!-- Définit l'animation -->
+        <animateMotion dur="10s" repeatCount="indefinite">
+          <mpath xlink:href="#animationLettre" />
+        </animateMotion>
+      </circle>
+    </g>
+    </svg>
 
   </body>
 </html>
