@@ -12,3 +12,5 @@ SoFifa utilise ces données pour permettre aux gamers qui jouent à FIFA de voir
 Sources de données: 
 https://sofifa.com/
 https://www.fifaindex.com/
+
+Données prises de Kaggle: https://www.kaggle.com/aayushmishra1512/fifa-2021-complete-player-data
