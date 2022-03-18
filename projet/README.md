@@ -14,3 +14,6 @@ https://sofifa.com/
 https://www.fifaindex.com/
 
 Données prises de Kaggle: https://www.kaggle.com/aayushmishra1512/fifa-2021-complete-player-data
+
+Wireframe: https://www.figma.com/proto/kgmRrs4spYZYPHgfqMXn7j/VisualDon-Wireframes?page-id=0%3A1&node-id=2%3A4&viewport=241%2C48%2C0.5&scaling=min-zoom&starting-point-node-id=2%3A4
+
