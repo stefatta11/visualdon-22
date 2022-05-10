@@ -131,6 +131,9 @@ function drawRect(country){
     let sumOverall;// additionne les overall
     let overallAverage;// moyenne de l'overall
     let sortPosition;//filtre par position
+    let sumAge;
+    let ageAverage;
+    let arrondiAge;
     //let sumPosition;
     // let dixPremiersJoueurs;
     desJoueurs = fifaPlayer.filter(fp => fp.nationality === country)
@@ -153,8 +156,17 @@ function drawRect(country){
         return d.pos;
       });
     //console.log(sortPosition)
+    sumAge = d3.sum(desJoueurs, function(d) {
+        return d.age;
+      });
+    
+      console.log(sumAge)
+    
+    ageAverage = sumAge / nbJoueursPays;
 
+    arrondiAge = ageAverage.toFixed(1)
 
+    console.log(arrondiAge)
 
     d3.select("#pageLaterale")
     .append("class", "nbJoueur")
@@ -165,13 +177,6 @@ function drawRect(country){
     .append("text")
     .text("Joueurs dans le jeu")
 
-    // d3.select("#pageLaterale")
-    // .append("class", "overallMoyen")
-    // .append("circle")
-    // .attr("fill", "red")
-    //     .attr("r", 50)
-    //     .attr("class", "circleOverall")
-
     d3.select("#pageLaterale")
     .append("class", "overallMoyen")
     .append("h2")
@@ -180,7 +185,17 @@ function drawRect(country){
     d3.select("#pageLaterale")
     .append("text")
     .text("Overall Moyen")
-    .style("padding-left", "10px")
+    //.style("padding-left", "10px")
+
+    d3.select("#pageLaterale")
+    .append("class", "ageMoyen")
+    .append("h2")
+    .text(arrondiAge)
+
+    d3.select("#pageLaterale")
+    .append("text")
+    .text("Moyenne d'age")
+    //.style("padding-left", "10px")
 
     const NB_MIN = Math.min(10, desJoueurs.length )
 
