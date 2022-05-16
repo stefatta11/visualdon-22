@@ -1,117 +1,139 @@
 html, body {
-    overflow: hidden;
+  overflow: hidden;
 
 }
 body{
-  background-color: #d3deff;
+background-color: #d3deff;
 }
 
-  #boutonRetour {
-    background-color: black; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: none;
-  font-size: 16px;
-  /* margin: 20px 20px; */
-  cursor: pointer;
-    position: absolute;
-    left:0;
-    top:0;
-  }
-
-  #pageLaterale{
-    background-color: white; 
-    border-width: 5px solid;
-    border-color: black;
-    width:650px;
-    /* height:500px; */
-    display: none;
-    position: absolute;
-    right:20px;
-    top:200px;
-    bottom: 70px;
-    padding:10px ;
-  }
-
-  #pageLaterale h1{
-    color:black;
-    
-    font-size: 30px;
-    font-family: helvetica;
-
-  }
-
-
-  #pageLaterale h2{
-    color:black;
-    padding-left: 30px;
-    margin-bottom: 0px;
-    font-size: 50px;
-    font-family: helvetica;
-
-  }
-
-  #pageLaterale text{
-    color:black;
-    margin-top: 0px;    
-    font-size: 20px;
-    font-family: helvetica;
-    /* text-align: center; */
-
-  }
-
-  #tabPlayers {
-    display: none;
-  }
- 
-  
- #tabPlayers {
+#boutonRetour {
+  background-color: black; 
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: none;
+font-size: 16px;
+/* margin: 20px 20px; */
+cursor: pointer;
   position: absolute;
-  left:200px;
-  top:110px;
-  border: medium black;
-  /* text-align: left; */
+  left:0;
+  top:0;
+}
 
- }
-
- /* #tabPlayers tbody{
-  text-align:center;
-  border:5px;
-
-
-
- }
- td .nomPlayers{
-   text-align: left;
- }
-  */
-
- th{
-  color:black; 
-    font-size: 20px;
-    font-family: helvetica;
-    text-align: left;
-    
-
-
- }
-
- table{
-  /* table-layout: fixed;*/
-  width:420px; 
-  border: 5px;
-
- }
- /* tr{
-  border:5px solid;
+#pageLaterale{
+  background-color: white; 
+  border-width: 5px solid;
   border-color: black;
+  width:650px;
+  /* height:500px; */
+  display: none;
+  position: absolute;
+  right:20px;
+  top:200px;
+  bottom: 70px;
+  padding:10px ;
+  border-radius: 10px;
+}
+
+#pageLaterale h1{
+  color:black;
+  
+  font-size: 30px;
+  font-family: helvetica;
+
+}
 
 
- } */
- td text{
-  text-align: center;
+#pageLaterale h2{
+  color:black;
+  padding-left: 30px;
+  margin-bottom: 0px;
+  font-size: 50px;
+  font-family: helvetica;
 
+}
+
+#pageLaterale text{
+  color:black;
+  margin-top: 0px;    
+  font-size: 20px;
+  font-family: helvetica;
+  /* text-align: center; */
+
+}
+
+#tabPlayers {
+  display: none;
+}
+
+
+#tabPlayers {
+position: absolute;
+left:200px;
+top:110px;
+border: medium black;
+
+/* text-align: left; */
+
+}
+
+/* #tabPlayers tbody{
+text-align:center;
+border:5px;
+}
+td .nomPlayers{
+ text-align: left;
+}
+*/
+
+th{
+color:black; 
+  font-size: 20px;
+  font-family: helvetica;
+  text-align: left;
+  
+
+
+}
+
+table{
+/* table-layout: fixed;*/
+width:420px; 
+border: 5px;
+
+}
+/* tr{
+border:5px solid;
+border-color: black;
+} */
+
+td text{
+text-align: center;
+
+}
+
+ img #logoFifa{
+  
+  display:none;
+  
+ }
+
+ img{
+  position: absolute;
+  width:15%;
+ }
+
+ #contexteProjet{
+  background-color: white;
+  position:absolute;
+  left:20px;
+  top:80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  font-family: helvetica;
+  font-size: 16px;
+  
  }

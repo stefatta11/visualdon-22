@@ -21,6 +21,7 @@ const path = d3.geoPath(projection);
 //console.log(data);
 
 function drawMap(data, capitals) {
+    
     //Dessine la carte
     svg.append("g")
         .selectAll("path")
@@ -102,6 +103,12 @@ function drawPointCountry(capitals) {
         .on("click", function (d){
             drawRect(this.id)
             boutonRetour(capitals)
+
+            d3.select("#logoFifa")
+            .style("display", "none")
+
+            d3.select("#contexteProjet")
+            .style("display", "none")
             
             
         })
@@ -160,13 +167,13 @@ function drawRect(country){
         return d.age;
       });
     
-      console.log(sumAge)
+      //console.log(sumAge)
     
     ageAverage = sumAge / nbJoueursPays;
 
     arrondiAge = ageAverage.toFixed(1)
 
-    console.log(arrondiAge)
+    //console.log(arrondiAge)
 
     d3.select("#pageLaterale")
     .append("class", "nbJoueur")
@@ -221,6 +228,12 @@ function drawRect(country){
         .append("td")
         .append("text")
         .text(dixPremiersJoueurs.pos)
+        .append("br")
+
+        d3.select("#tabPlayers tbody")
+        .append("td")
+        .append("text")
+        .text(dixPremiersJoueurs.age)
         .append("br")
 
         d3.select("#tabPlayers tbody")
@@ -301,6 +314,12 @@ function effaceRect(){
     d3.selectAll("#tabPlayers tbody tr")
     .remove("tr")
 
+
+    d3.select("#logoFifa")
+            .style("display", "block")
+    
+    d3.select("#contexteProjet")
+            .style("display", "block")
 
 
     
